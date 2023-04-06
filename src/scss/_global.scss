@@ -1,0 +1,34 @@
+html {
+    font-size: 16px;
+}
+
+:root {
+    // Colors
+    --dark: #030303;
+    --gray: #939393;
+    --light: #f1f1f1;
+    --white: #ffffff;
+    --accent: #fe9e47;
+
+    // Transitions
+    --animation-main: all 0.5s cubic-bezier(0.7, 0, 0.3, 1);
+    --animation-fast: all 0.3s cubic-bezier(0.7, 0, 0.3, 1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+}
+
+.container {
+    max-width: 1250px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1rem;
+}

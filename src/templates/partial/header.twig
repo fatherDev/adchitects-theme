@@ -1,0 +1,15 @@
+<header class="header js-header">
+	{% block header %}
+		<div class="container header__container">
+			<a class="c-logo" href="{{ site.url }}" rel="home">
+				<img src="{{ theme.link }}/src/assets/img/logo.svg" alt="Logo" width="102" height="12">
+			</a>
+			<nav id="nav-main" class="nav-main" role="navigation">
+				{% include "menu.twig" with {'items': menu.get_items} %}
+			</nav>
+			<div class="user">
+				<img src="{{ theme.link }}/src/assets/img/user.svg" alt="Logo" width="18" height="24">
+			</div>
+		</div>
+	{% endblock %}
+</header>

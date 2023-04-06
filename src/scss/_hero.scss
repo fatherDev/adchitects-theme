@@ -1,0 +1,18 @@
+.hero {
+    display: flex;
+    align-items: center;
+    min-height: 105vh;
+
+    h1 {
+        font-size: 4rem;
+        font-weight: 700;
+        margin-bottom: 2rem;
+    }
+
+    &__wrapper {
+        max-width: 614px;
+        width: 100%;
+        margin: 196px auto;
+        text-align: center;
+    }
+}

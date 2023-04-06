@@ -1,0 +1,37 @@
+.topbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--accent);
+    z-index: 2;
+    padding: 0.5rem 0;
+    transition: var(--animation-main);
+
+    &.is-hidden {
+        transform: translateY(-100%);
+    }
+
+    .container {
+        position: relative;
+    }
+
+    &__img {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        cursor: pointer;
+        transition: var(--animation-fast);
+
+        &:hover {
+            transform: translateY(-50%) rotate(90deg);
+        }
+    }
+
+    p {
+        font-size: 0.75rem;
+        text-align: center;
+        color: var(--white);
+    }
+}

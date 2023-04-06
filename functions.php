@@ -193,4 +193,14 @@ class StarterSite extends Timber\Site
 
 }
 
+if ( ! function_exists( 'mytheme_register_nav_menu' ) ) {
+
+	function mytheme_register_nav_menu(){
+		register_nav_menus( array(
+	    	'krove_menu' => __( 'Primary Menu', 'text_domain' ),
+		) );
+	}
+	add_action( 'after_setup_theme', 'mytheme_register_nav_menu', 0 );
+}
+
 new StarterSite();

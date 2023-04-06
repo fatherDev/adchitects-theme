@@ -1,0 +1,33 @@
+.header {
+    position: fixed;
+    top: 34px;
+    left: 0;
+    width: 100%;
+    transition: all 0.3s ease;
+    background: var(--white);
+    z-index: 1;
+
+    &.no-gap {
+        top: 0;
+    }
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid var(--light);
+    }
+
+    &.is-scrolled {
+        transform: translateY(calc(-100% - 34px));
+
+        .menu-item ul {
+            transition: all 0.3s ease !important;
+            pointer-events: none !important;
+        }
+    }
+
+    .user {
+        cursor: pointer;
+    }
+}

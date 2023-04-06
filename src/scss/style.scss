@@ -1,3 +1,6 @@
-@import "../../node_modules/bootstrap/scss/bootstrap";
-
-// Your styles here
+// @import "../../node_modules/bootstrap/scss/bootstrap";
+@import "global";
+@import "header";
+@import "nav-desktop";
+@import "hero";
+@import "topbar";
